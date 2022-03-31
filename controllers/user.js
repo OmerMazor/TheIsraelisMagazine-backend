@@ -171,7 +171,7 @@ exports.userLogin = (req, res, next) => {
       });
     };
     if(user && isMatch){
-    const token = jwt.sign({email: fetchedUser.email, userId: fetchedUser._id}, "secret_this_should_be_longer",
+    const token = jwt.sign({email: fetchedUser.email, userId: fetchedUser._id}, process.env.JWT_SECRET,
     {expiresIn: "1h" });
      return res.status(200).json({
       token: token,
