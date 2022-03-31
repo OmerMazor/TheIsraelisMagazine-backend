@@ -24,7 +24,7 @@ async function sendEmail (email) {
     secure: true,
     auth: {
       user: "omermazorgroup@gmail.com",
-      pass: 'sdeuchbhqwuzorxv'
+      pass: process.env.EMAIL_PASSWORD
     }
   });
   random = Math.floor(Math.random() * 100000);
@@ -71,7 +71,7 @@ exports.checkEmail = async (req, res, next) => {
     secure: true,
     auth: {
       user: "omermazorgroup@gmail.com",
-      pass: 'sdeuchbhqwuzorxv'
+      pass: process.env.EMAIL_PASSWORD
     }
   });
   random = Math.floor(Math.random() * 100000);
