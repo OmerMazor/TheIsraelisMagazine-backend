@@ -31,7 +31,7 @@ const app = express();
 // }).catch((err) => {
 //   console.log(err);
 // });
-mongoose.connect('mongodb+srv://omermazorgroup:QXlBGgzaskMIjL2l@cluster0.pzt0d.mongodb.net/theIsraelisMagazine?retryWrites=true&w=majority', {useNewUrlParser : true, useUnifiedTopology: true}).then(() => {
+mongoose.connect(process.env.DB_CONNECT, {useNewUrlParser : true, useUnifiedTopology: true}).then(() => {
 
   console.log('server is connected to mongoDB');
 
