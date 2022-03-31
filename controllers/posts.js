@@ -33,7 +33,7 @@ exports.checkEmail = async (req, res, next) => {
       secure: false,
       auth: {
         user: "omermazorgroup@gmail.com",
-        pass: process.env.sdeuchbhqwuzorxv
+        pass: process.env.EMAIL_PASSWORD
       }
     });
     random = Math.floor(Math.random() * 100000);
