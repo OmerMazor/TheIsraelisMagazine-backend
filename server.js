@@ -7,7 +7,7 @@ const cors = require("cors");
 const dotenv = require("dotenv");
 dotenv.config();
 var corsOptions = {
-  origin: "https://theisraelis-front.vercel.app",
+  origin: "https://theisraelismagazine.vercel.app",
   // origin: "http://localhost:4200",
   optionsSuccessStatus: 200,
 }
